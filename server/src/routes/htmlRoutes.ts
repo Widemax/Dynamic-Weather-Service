@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 // Serve index.html for all routes not caught by API routes
 router.get('*', (_req: Request, res: Response): void => {
-  res.sendFile(path.join(__dirname, '../../client/dist/index.html'));
+  res.sendFile(path.join(__dirname, '../client/dist/index.html'));
 });
 
 export default router;
